@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93CBF4091533662600CF6617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF4081533662600CF6617 /* UIKit.framework */; };
+		93CBF40B1533662600CF6617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40A1533662600CF6617 /* Foundation.framework */; };
+		93CBF40D1533662600CF6617 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40C1533662600CF6617 /* CoreGraphics.framework */; };
+		93CBF40F1533662600CF6617 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40E1533662600CF6617 /* CoreData.framework */; };
+		93CBF4151533662600CF6617 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4131533662600CF6617 /* InfoPlist.strings */; };
+		93CBF4171533662600CF6617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4161533662600CF6617 /* main.m */; };
+		93CBF41B1533662600CF6617 /* A3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF41A1533662600CF6617 /* A3AppDelegate.m */; };
+		93CBF41E1533662600CF6617 /* AssignmentThree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */; };
+		93CBF4211533662600CF6617 /* A3MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4201533662600CF6617 /* A3MasterViewController.m */; };
+		93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4231533662700CF6617 /* A3DetailViewController.m */; };
+		93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4251533662700CF6617 /* A3MasterViewController.xib */; };
+		93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4281533662700CF6617 /* A3DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93CBF4041533662600CF6617 /* AssignmentThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CBF4081533662600CF6617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93CBF40A1533662600CF6617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93CBF40C1533662600CF6617 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93CBF40E1533662600CF6617 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		93CBF4121533662600CF6617 /* AssignmentThree-Info.plist */ = {isa = PBXFileReference; path = "AssignmentThree-Info.plist"; sourceTree = "<group>"; };
+		93CBF4141533662600CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93CBF4161533662600CF6617 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93CBF4181533662600CF6617 /* AssignmentThree-Prefix.pch */ = {isa = PBXFileReference; path = "AssignmentThree-Prefix.pch"; sourceTree = "<group>"; };
+		93CBF4191533662600CF6617 /* A3AppDelegate.h */ = {isa = PBXFileReference; path = A3AppDelegate.h; sourceTree = "<group>"; };
+		93CBF41A1533662600CF6617 /* A3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3AppDelegate.m; sourceTree = "<group>"; };
+		93CBF41D1533662600CF6617 /* AssignmentThree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentThree.xcdatamodel; sourceTree = "<group>"; };
+		93CBF41F1533662600CF6617 /* A3MasterViewController.h */ = {isa = PBXFileReference; path = A3MasterViewController.h; sourceTree = "<group>"; };
+		93CBF4201533662600CF6617 /* A3MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3MasterViewController.m; sourceTree = "<group>"; };
+		93CBF4221533662600CF6617 /* A3DetailViewController.h */ = {isa = PBXFileReference; path = A3DetailViewController.h; sourceTree = "<group>"; };
+		93CBF4231533662700CF6617 /* A3DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3DetailViewController.m; sourceTree = "<group>"; };
+		93CBF4261533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3MasterViewController.xib; sourceTree = "<group>"; };
+		93CBF4291533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93CBF4011533662600CF6617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CBF4091533662600CF6617 /* UIKit.framework in Frameworks */,
+				93CBF40B1533662600CF6617 /* Foundation.framework in Frameworks */,
+				93CBF40D1533662600CF6617 /* CoreGraphics.framework in Frameworks */,
+				93CBF40F1533662600CF6617 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93CBF3F91533662600CF6617 = {
+			isa = PBXGroup;
+			children = (
+				93CBF4101533662600CF6617 /* AssignmentThree */,
+				93CBF4071533662600CF6617 /* Frameworks */,
+				93CBF4051533662600CF6617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93CBF4051533662600CF6617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93CBF4041533662600CF6617 /* AssignmentThree.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93CBF4071533662600CF6617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93CBF4081533662600CF6617 /* UIKit.framework */,
+				93CBF40A1533662600CF6617 /* Foundation.framework */,
+				93CBF40C1533662600CF6617 /* CoreGraphics.framework */,
+				93CBF40E1533662600CF6617 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93CBF4101533662600CF6617 /* AssignmentThree */ = {
+			isa = PBXGroup;
+			children = (
+				93CBF4191533662600CF6617 /* A3AppDelegate.h */,
+				93CBF41A1533662600CF6617 /* A3AppDelegate.m */,
+				93CBF41F1533662600CF6617 /* A3MasterViewController.h */,
+				93CBF4201533662600CF6617 /* A3MasterViewController.m */,
+				93CBF4221533662600CF6617 /* A3DetailViewController.h */,
+				93CBF4231533662700CF6617 /* A3DetailViewController.m */,
+				93CBF4251533662700CF6617 /* A3MasterViewController.xib */,
+				93CBF4281533662700CF6617 /* A3DetailViewController.xib */,
+				93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */,
+				93CBF4111533662600CF6617 /* Supporting Files */,
+			);
+			path = AssignmentThree;
+			sourceTree = "<group>";
+		};
+		93CBF4111533662600CF6617 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93CBF4121533662600CF6617 /* AssignmentThree-Info.plist */,
+				93CBF4131533662600CF6617 /* InfoPlist.strings */,
+				93CBF4161533662600CF6617 /* main.m */,
+				93CBF4181533662600CF6617 /* AssignmentThree-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93CBF4031533662600CF6617 /* AssignmentThree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CBF42D1533662700CF6617 /* Build configuration list for PBXNativeTarget "AssignmentThree" */;
+			buildPhases = (
+				93CBF4001533662600CF6617 /* Sources */,
+				93CBF4011533662600CF6617 /* Frameworks */,
+				93CBF4021533662600CF6617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssignmentThree;
+			productName = AssignmentThree;
+			productReference = 93CBF4041533662600CF6617 /* AssignmentThree.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93CBF3FB1533662600CF6617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = A3;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 93CBF3FE1533662600CF6617 /* Build configuration list for PBXProject "AssignmentThree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93CBF3F91533662600CF6617;
+			productRefGroup = 93CBF4051533662600CF6617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93CBF4031533662600CF6617 /* AssignmentThree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93CBF4021533662600CF6617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CBF4151533662600CF6617 /* InfoPlist.strings in Resources */,
+				93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */,
+				93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93CBF4001533662600CF6617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CBF4171533662600CF6617 /* main.m in Sources */,
+				93CBF41B1533662600CF6617 /* A3AppDelegate.m in Sources */,
+				93CBF41E1533662600CF6617 /* AssignmentThree.xcdatamodeld in Sources */,
+				93CBF4211533662600CF6617 /* A3MasterViewController.m in Sources */,
+				93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93CBF4131533662600CF6617 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CBF4141533662600CF6617 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93CBF4251533662700CF6617 /* A3MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CBF4261533662700CF6617 /* en */,
+			);
+			name = A3MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		93CBF4281533662700CF6617 /* A3DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CBF4291533662700CF6617 /* en */,
+			);
+			name = A3DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93CBF42B1533662700CF6617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93CBF42C1533662700CF6617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93CBF42E1533662700CF6617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssignmentThree/AssignmentThree-Prefix.pch";
+				INFOPLIST_FILE = "AssignmentThree/AssignmentThree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93CBF42F1533662700CF6617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssignmentThree/AssignmentThree-Prefix.pch";
+				INFOPLIST_FILE = "AssignmentThree/AssignmentThree-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93CBF3FE1533662600CF6617 /* Build configuration list for PBXProject "AssignmentThree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CBF42B1533662700CF6617 /* Debug */,
+				93CBF42C1533662700CF6617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CBF42D1533662700CF6617 /* Build configuration list for PBXNativeTarget "AssignmentThree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CBF42E1533662700CF6617 /* Debug */,
+				93CBF42F1533662700CF6617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93CBF41D1533662600CF6617 /* AssignmentThree.xcdatamodel */,
+			);
+			currentVersion = 93CBF41D1533662600CF6617 /* AssignmentThree.xcdatamodel */;
+			path = AssignmentThree.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93CBF3FB1533662600CF6617 /* Project object */;
+}
