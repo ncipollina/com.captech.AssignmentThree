@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9351A0B71534B42D00AC84E8 /* ZipSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0B61534B42D00AC84E8 /* ZipSearch.m */; };
+		9351A0B91534B72700AC84E8 /* AssignmentThree.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */; };
+		9351A0BD1534B88700AC84E8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0BB1534B88700AC84E8 /* RootViewController.m */; };
+		9351A0BE1534B88700AC84E8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9351A0BC1534B88700AC84E8 /* RootViewController.xib */; };
 		93CBF4091533662600CF6617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF4081533662600CF6617 /* UIKit.framework */; };
 		93CBF40B1533662600CF6617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40A1533662600CF6617 /* Foundation.framework */; };
 		93CBF40D1533662600CF6617 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40C1533662600CF6617 /* CoreGraphics.framework */; };
@@ -19,27 +23,43 @@
 		93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4231533662700CF6617 /* A3DetailViewController.m */; };
 		93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4251533662700CF6617 /* A3MasterViewController.xib */; };
 		93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4281533662700CF6617 /* A3DetailViewController.xib */; };
+		93F875B71534BF5A00350EBD /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F875B51534BF5A00350EBD /* SearchResultsViewController.m */; };
+		93F875B81534BF5A00350EBD /* SearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F875B61534BF5A00350EBD /* SearchResultsViewController.xib */; };
+		93F875D11534D1AF00350EBD /* SearchResultViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F875D01534D1AE00350EBD /* SearchResultViewCell.m */; };
+		93F875D31534D26600350EBD /* SearchResultViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F875D21534D26600350EBD /* SearchResultViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9351A0B51534B42D00AC84E8 /* ZipSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipSearch.h; sourceTree = "<group>"; };
+		9351A0B61534B42D00AC84E8 /* ZipSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipSearch.m; sourceTree = "<group>"; };
+		9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AssignmentThree.sqlite; sourceTree = "<group>"; };
+		9351A0BA1534B88700AC84E8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9351A0BB1534B88700AC84E8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9351A0BC1534B88700AC84E8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		93CBF4041533662600CF6617 /* AssignmentThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CBF4081533662600CF6617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93CBF40A1533662600CF6617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93CBF40C1533662600CF6617 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		93CBF40E1533662600CF6617 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		93CBF4121533662600CF6617 /* AssignmentThree-Info.plist */ = {isa = PBXFileReference; path = "AssignmentThree-Info.plist"; sourceTree = "<group>"; };
+		93CBF4121533662600CF6617 /* AssignmentThree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssignmentThree-Info.plist"; sourceTree = "<group>"; };
 		93CBF4141533662600CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93CBF4161533662600CF6617 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93CBF4181533662600CF6617 /* AssignmentThree-Prefix.pch */ = {isa = PBXFileReference; path = "AssignmentThree-Prefix.pch"; sourceTree = "<group>"; };
-		93CBF4191533662600CF6617 /* A3AppDelegate.h */ = {isa = PBXFileReference; path = A3AppDelegate.h; sourceTree = "<group>"; };
+		93CBF4181533662600CF6617 /* AssignmentThree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentThree-Prefix.pch"; sourceTree = "<group>"; };
+		93CBF4191533662600CF6617 /* A3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3AppDelegate.h; sourceTree = "<group>"; };
 		93CBF41A1533662600CF6617 /* A3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3AppDelegate.m; sourceTree = "<group>"; };
 		93CBF41D1533662600CF6617 /* AssignmentThree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentThree.xcdatamodel; sourceTree = "<group>"; };
-		93CBF41F1533662600CF6617 /* A3MasterViewController.h */ = {isa = PBXFileReference; path = A3MasterViewController.h; sourceTree = "<group>"; };
+		93CBF41F1533662600CF6617 /* A3MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3MasterViewController.h; sourceTree = "<group>"; };
 		93CBF4201533662600CF6617 /* A3MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3MasterViewController.m; sourceTree = "<group>"; };
-		93CBF4221533662600CF6617 /* A3DetailViewController.h */ = {isa = PBXFileReference; path = A3DetailViewController.h; sourceTree = "<group>"; };
+		93CBF4221533662600CF6617 /* A3DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3DetailViewController.h; sourceTree = "<group>"; };
 		93CBF4231533662700CF6617 /* A3DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3DetailViewController.m; sourceTree = "<group>"; };
 		93CBF4261533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3MasterViewController.xib; sourceTree = "<group>"; };
 		93CBF4291533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3DetailViewController.xib; sourceTree = "<group>"; };
+		93F875B41534BF5A00350EBD /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		93F875B51534BF5A00350EBD /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		93F875B61534BF5A00350EBD /* SearchResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsViewController.xib; sourceTree = "<group>"; };
+		93F875CF1534D1AE00350EBD /* SearchResultViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewCell.h; sourceTree = "<group>"; };
+		93F875D01534D1AE00350EBD /* SearchResultViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewCell.m; sourceTree = "<group>"; };
+		93F875D21534D26600350EBD /* SearchResultViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +77,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9373C849153496A800353E26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		93CBF3F91533662600CF6617 = {
 			isa = PBXGroup;
 			children = (
+				9373C849153496A800353E26 /* Resources */,
 				93CBF4101533662600CF6617 /* AssignmentThree */,
 				93CBF4071533662600CF6617 /* Frameworks */,
 				93CBF4051533662600CF6617 /* Products */,
@@ -97,7 +126,18 @@
 				93CBF4251533662700CF6617 /* A3MasterViewController.xib */,
 				93CBF4281533662700CF6617 /* A3DetailViewController.xib */,
 				93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */,
+				9351A0B51534B42D00AC84E8 /* ZipSearch.h */,
+				9351A0B61534B42D00AC84E8 /* ZipSearch.m */,
 				93CBF4111533662600CF6617 /* Supporting Files */,
+				9351A0BA1534B88700AC84E8 /* RootViewController.h */,
+				9351A0BB1534B88700AC84E8 /* RootViewController.m */,
+				9351A0BC1534B88700AC84E8 /* RootViewController.xib */,
+				93F875B41534BF5A00350EBD /* SearchResultsViewController.h */,
+				93F875B51534BF5A00350EBD /* SearchResultsViewController.m */,
+				93F875B61534BF5A00350EBD /* SearchResultsViewController.xib */,
+				93F875CF1534D1AE00350EBD /* SearchResultViewCell.h */,
+				93F875D01534D1AE00350EBD /* SearchResultViewCell.m */,
+				93F875D21534D26600350EBD /* SearchResultViewCell.xib */,
 			);
 			path = AssignmentThree;
 			sourceTree = "<group>";
@@ -167,6 +207,10 @@
 				93CBF4151533662600CF6617 /* InfoPlist.strings in Resources */,
 				93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */,
 				93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */,
+				9351A0B91534B72700AC84E8 /* AssignmentThree.sqlite in Resources */,
+				9351A0BE1534B88700AC84E8 /* RootViewController.xib in Resources */,
+				93F875B81534BF5A00350EBD /* SearchResultsViewController.xib in Resources */,
+				93F875D31534D26600350EBD /* SearchResultViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +226,10 @@
 				93CBF41E1533662600CF6617 /* AssignmentThree.xcdatamodeld in Sources */,
 				93CBF4211533662600CF6617 /* A3MasterViewController.m in Sources */,
 				93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */,
+				9351A0B71534B42D00AC84E8 /* ZipSearch.m in Sources */,
+				9351A0BD1534B88700AC84E8 /* RootViewController.m in Sources */,
+				93F875B71534BF5A00350EBD /* SearchResultsViewController.m in Sources */,
+				93F875D11534D1AF00350EBD /* SearchResultViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +347,7 @@
 				93CBF42F1533662700CF6617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

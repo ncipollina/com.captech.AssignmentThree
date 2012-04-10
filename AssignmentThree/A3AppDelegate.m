@@ -8,7 +8,7 @@
 
 #import "A3AppDelegate.h"
 
-#import "A3MasterViewController.h"
+#import "RootViewController.h"
 
 @implementation A3AppDelegate
 
@@ -33,7 +33,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 
-    A3MasterViewController *masterViewController = [[[A3MasterViewController alloc] initWithNibName:@"A3MasterViewController" bundle:nil] autorelease];
+    RootViewController *masterViewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
     masterViewController.managedObjectContext = self.managedObjectContext;
     self.window.rootViewController = self.navigationController;
@@ -120,8 +120,34 @@
     if (__persistentStoreCoordinator != nil) {
         return __persistentStoreCoordinator;
     }
+
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"AssignmentThree.sqlite"];
+    
+    ////////////////////////////////////////////////////////
+    // copy the shipped sqlite db to the documents directory
+   
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *storePath = [documentsDirectory stringByAppendingPathComponent: @"AssignmentThree.sqlite"];
+    NSURL *storeURL = [NSURL fileURLWithPath:storePath];
+    // Put down default db if it doesn't already exist
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:storePath]) {
+        NSString *defaultStorePath = [[NSBundle mainBundle] 
+                                      pathForResource:@"AssignmentThree" ofType:@"sqlite"];
+        if (defaultStorePath) {
+            NSError *copyError = nil;
+            if(![fileManager copyItemAtPath:defaultStorePath toPath:storePath error:&copyError]){
+                NSLog(@"\n*****\nERROR Copying Database\n\n\n %@",[copyError localizedDescription]);
+            }
+            
+        }
+    }
+    
+    //
+    ////////////////////////////////////////////////////
+    
+    //NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"AssignmentThree.sqlite"];
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

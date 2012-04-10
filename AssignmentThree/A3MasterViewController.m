@@ -9,6 +9,7 @@
 #import "A3MasterViewController.h"
 
 #import "A3DetailViewController.h"
+#import "ZipSearch.h"
 
 @interface A3MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -82,13 +83,25 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[self.fetchedResultsController sections] count];
+    NSInteger count = [[self.fetchedResultsController sections] count];
+    
+	if (count == 0) {
+		count = 1;
+	}
+	
+    return count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-    return [sectionInfo numberOfObjects];
+    NSInteger numberOfRows = 0;
+	
+    if ([[self.fetchedResultsController sections] count] > 0) {
+        id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+        numberOfRows = [sectionInfo numberOfObjects];
+    }
+    
+    return numberOfRows;
 }
 
 // Customize the appearance of table view cells.
@@ -154,14 +167,14 @@
     
     NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ZipSearch" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO] autorelease];
+    NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"zipCode" ascending:YES] autorelease];
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -245,8 +258,9 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    ZipSearch *zipCode = (ZipSearch *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = zipCode.zipCode;
+    cell.detailTextLabel.text = zipCode.city;
 }
 
 @end
