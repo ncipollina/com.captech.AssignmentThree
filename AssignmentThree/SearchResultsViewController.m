@@ -15,8 +15,19 @@
 
 @implementation SearchResultsViewController
 @synthesize searchResults = _searchResults;
+@synthesize mapController = _mapController;
 
 static NSString *CellClassName = @"SearchResultViewCell";
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 
 - (void)setSearchResults:(NSArray *)newResults{
     if (_searchResults != newResults)
@@ -26,6 +37,7 @@ static NSString *CellClassName = @"SearchResultViewCell";
 - (void)dealloc
 {
     [_searchResults release];
+    [_mapController release];
     [super dealloc];
 }
 
@@ -139,6 +151,14 @@ static NSString *CellClassName = @"SearchResultViewCell";
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    if (self.mapController == nil)
+        self.mapController = [[[MapViewController alloc] initWithNibName:@"MapViewController" bundle:[NSBundle mainBundle]] autorelease];
+    
+    ZipSearch *zipCode = (ZipSearch *)[self.searchResults objectAtIndex:indexPath.row];
+    [self.mapController setZipData:zipCode];
+    
+    [self.navigationController pushViewController:self.mapController animated:YES];
+
 }
 
 #pragma mark - Fetched results controller

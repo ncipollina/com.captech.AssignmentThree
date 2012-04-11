@@ -21,10 +21,10 @@
 @synthesize locationLabel = _locationLabel;
 
 - (void)setSearchData:(ZipSearch *)newSearchData{
-    [newSearchData retain];
-    [_searchData release];
-    _searchData = newSearchData;
-    
+        ZipSearch *oldZip = _searchData;
+        _searchData = [newSearchData retain];
+        [oldZip release];
+        
     self.zipCodeLabel.text = _searchData.zipCode;
     self.locationLabel.text = [NSString stringWithFormat: @"%@, %@ %@", _searchData.city, _searchData.state, _searchData.zipCode];
 }

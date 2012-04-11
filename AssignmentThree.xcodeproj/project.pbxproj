@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932896F71535AD7A00C00236 /* ZipLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 932896F61535AD7A00C00236 /* ZipLocation.m */; };
+		932897011535C39F00C00236 /* ZipCodeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */; };
+		932897021535C39F00C00236 /* ZipCodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */; };
+		932897051535C4CF00C00236 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = 932897041535C4CF00C00236 /* Detail.m */; };
 		9351A0B71534B42D00AC84E8 /* ZipSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0B61534B42D00AC84E8 /* ZipSearch.m */; };
 		9351A0B91534B72700AC84E8 /* AssignmentThree.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */; };
 		9351A0BD1534B88700AC84E8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0BB1534B88700AC84E8 /* RootViewController.m */; };
 		9351A0BE1534B88700AC84E8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9351A0BC1534B88700AC84E8 /* RootViewController.xib */; };
+		938B20C615351D3600B2DC96 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B20C415351D3600B2DC96 /* MapViewController.m */; };
+		938B20C715351D3600B2DC96 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938B20C515351D3600B2DC96 /* MapViewController.xib */; };
+		938B20C915351D9C00B2DC96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938B20C815351D9C00B2DC96 /* MapKit.framework */; };
 		93CBF4091533662600CF6617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF4081533662600CF6617 /* UIKit.framework */; };
 		93CBF40B1533662600CF6617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40A1533662600CF6617 /* Foundation.framework */; };
 		93CBF40D1533662600CF6617 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CBF40C1533662600CF6617 /* CoreGraphics.framework */; };
@@ -19,10 +26,6 @@
 		93CBF4171533662600CF6617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4161533662600CF6617 /* main.m */; };
 		93CBF41B1533662600CF6617 /* A3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF41A1533662600CF6617 /* A3AppDelegate.m */; };
 		93CBF41E1533662600CF6617 /* AssignmentThree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */; };
-		93CBF4211533662600CF6617 /* A3MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4201533662600CF6617 /* A3MasterViewController.m */; };
-		93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CBF4231533662700CF6617 /* A3DetailViewController.m */; };
-		93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4251533662700CF6617 /* A3MasterViewController.xib */; };
-		93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CBF4281533662700CF6617 /* A3DetailViewController.xib */; };
 		93F875B71534BF5A00350EBD /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F875B51534BF5A00350EBD /* SearchResultsViewController.m */; };
 		93F875B81534BF5A00350EBD /* SearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F875B61534BF5A00350EBD /* SearchResultsViewController.xib */; };
 		93F875D11534D1AF00350EBD /* SearchResultViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F875D01534D1AE00350EBD /* SearchResultViewCell.m */; };
@@ -30,12 +33,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		932896F51535AD7A00C00236 /* ZipLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipLocation.h; sourceTree = "<group>"; };
+		932896F61535AD7A00C00236 /* ZipLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipLocation.m; sourceTree = "<group>"; };
+		932896FE1535C39F00C00236 /* ZipCodeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipCodeDetailViewController.h; sourceTree = "<group>"; };
+		932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipCodeDetailViewController.m; sourceTree = "<group>"; };
+		932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZipCodeDetailViewController.xib; sourceTree = "<group>"; };
+		932897031535C4CF00C00236 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		932897041535C4CF00C00236 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 		9351A0B51534B42D00AC84E8 /* ZipSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipSearch.h; sourceTree = "<group>"; };
 		9351A0B61534B42D00AC84E8 /* ZipSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipSearch.m; sourceTree = "<group>"; };
 		9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AssignmentThree.sqlite; sourceTree = "<group>"; };
 		9351A0BA1534B88700AC84E8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		9351A0BB1534B88700AC84E8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		9351A0BC1534B88700AC84E8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		938B20C315351D3600B2DC96 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		938B20C415351D3600B2DC96 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		938B20C515351D3600B2DC96 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		938B20C815351D9C00B2DC96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		93CBF4041533662600CF6617 /* AssignmentThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CBF4081533662600CF6617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93CBF40A1533662600CF6617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,12 +62,6 @@
 		93CBF4191533662600CF6617 /* A3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3AppDelegate.h; sourceTree = "<group>"; };
 		93CBF41A1533662600CF6617 /* A3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3AppDelegate.m; sourceTree = "<group>"; };
 		93CBF41D1533662600CF6617 /* AssignmentThree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentThree.xcdatamodel; sourceTree = "<group>"; };
-		93CBF41F1533662600CF6617 /* A3MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3MasterViewController.h; sourceTree = "<group>"; };
-		93CBF4201533662600CF6617 /* A3MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3MasterViewController.m; sourceTree = "<group>"; };
-		93CBF4221533662600CF6617 /* A3DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A3DetailViewController.h; sourceTree = "<group>"; };
-		93CBF4231533662700CF6617 /* A3DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A3DetailViewController.m; sourceTree = "<group>"; };
-		93CBF4261533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3MasterViewController.xib; sourceTree = "<group>"; };
-		93CBF4291533662700CF6617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A3DetailViewController.xib; sourceTree = "<group>"; };
 		93F875B41534BF5A00350EBD /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		93F875B51534BF5A00350EBD /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		93F875B61534BF5A00350EBD /* SearchResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsViewController.xib; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938B20C915351D9C00B2DC96 /* MapKit.framework in Frameworks */,
 				93CBF4091533662600CF6617 /* UIKit.framework in Frameworks */,
 				93CBF40B1533662600CF6617 /* Foundation.framework in Frameworks */,
 				93CBF40D1533662600CF6617 /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +97,7 @@
 		93CBF3F91533662600CF6617 = {
 			isa = PBXGroup;
 			children = (
+				938B20C815351D9C00B2DC96 /* MapKit.framework */,
 				9373C849153496A800353E26 /* Resources */,
 				93CBF4101533662600CF6617 /* AssignmentThree */,
 				93CBF4071533662600CF6617 /* Frameworks */,
@@ -119,12 +129,6 @@
 			children = (
 				93CBF4191533662600CF6617 /* A3AppDelegate.h */,
 				93CBF41A1533662600CF6617 /* A3AppDelegate.m */,
-				93CBF41F1533662600CF6617 /* A3MasterViewController.h */,
-				93CBF4201533662600CF6617 /* A3MasterViewController.m */,
-				93CBF4221533662600CF6617 /* A3DetailViewController.h */,
-				93CBF4231533662700CF6617 /* A3DetailViewController.m */,
-				93CBF4251533662700CF6617 /* A3MasterViewController.xib */,
-				93CBF4281533662700CF6617 /* A3DetailViewController.xib */,
 				93CBF41C1533662600CF6617 /* AssignmentThree.xcdatamodeld */,
 				9351A0B51534B42D00AC84E8 /* ZipSearch.h */,
 				9351A0B61534B42D00AC84E8 /* ZipSearch.m */,
@@ -138,6 +142,16 @@
 				93F875CF1534D1AE00350EBD /* SearchResultViewCell.h */,
 				93F875D01534D1AE00350EBD /* SearchResultViewCell.m */,
 				93F875D21534D26600350EBD /* SearchResultViewCell.xib */,
+				938B20C315351D3600B2DC96 /* MapViewController.h */,
+				938B20C415351D3600B2DC96 /* MapViewController.m */,
+				938B20C515351D3600B2DC96 /* MapViewController.xib */,
+				932896F51535AD7A00C00236 /* ZipLocation.h */,
+				932896F61535AD7A00C00236 /* ZipLocation.m */,
+				932896FE1535C39F00C00236 /* ZipCodeDetailViewController.h */,
+				932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */,
+				932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */,
+				932897031535C4CF00C00236 /* Detail.h */,
+				932897041535C4CF00C00236 /* Detail.m */,
 			);
 			path = AssignmentThree;
 			sourceTree = "<group>";
@@ -205,12 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CBF4151533662600CF6617 /* InfoPlist.strings in Resources */,
-				93CBF4271533662700CF6617 /* A3MasterViewController.xib in Resources */,
-				93CBF42A1533662700CF6617 /* A3DetailViewController.xib in Resources */,
 				9351A0B91534B72700AC84E8 /* AssignmentThree.sqlite in Resources */,
 				9351A0BE1534B88700AC84E8 /* RootViewController.xib in Resources */,
 				93F875B81534BF5A00350EBD /* SearchResultsViewController.xib in Resources */,
 				93F875D31534D26600350EBD /* SearchResultViewCell.xib in Resources */,
+				938B20C715351D3600B2DC96 /* MapViewController.xib in Resources */,
+				932897021535C39F00C00236 /* ZipCodeDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,12 +238,14 @@
 				93CBF4171533662600CF6617 /* main.m in Sources */,
 				93CBF41B1533662600CF6617 /* A3AppDelegate.m in Sources */,
 				93CBF41E1533662600CF6617 /* AssignmentThree.xcdatamodeld in Sources */,
-				93CBF4211533662600CF6617 /* A3MasterViewController.m in Sources */,
-				93CBF4241533662700CF6617 /* A3DetailViewController.m in Sources */,
 				9351A0B71534B42D00AC84E8 /* ZipSearch.m in Sources */,
 				9351A0BD1534B88700AC84E8 /* RootViewController.m in Sources */,
 				93F875B71534BF5A00350EBD /* SearchResultsViewController.m in Sources */,
 				93F875D11534D1AF00350EBD /* SearchResultViewCell.m in Sources */,
+				938B20C615351D3600B2DC96 /* MapViewController.m in Sources */,
+				932896F71535AD7A00C00236 /* ZipLocation.m in Sources */,
+				932897011535C39F00C00236 /* ZipCodeDetailViewController.m in Sources */,
+				932897051535C4CF00C00236 /* Detail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,22 +258,6 @@
 				93CBF4141533662600CF6617 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		93CBF4251533662700CF6617 /* A3MasterViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93CBF4261533662700CF6617 /* en */,
-			);
-			name = A3MasterViewController.xib;
-			sourceTree = "<group>";
-		};
-		93CBF4281533662700CF6617 /* A3DetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93CBF4291533662700CF6617 /* en */,
-			);
-			name = A3DetailViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AssignmentThree/AssignmentThree-Prefix.pch";
 				INFOPLIST_FILE = "AssignmentThree/AssignmentThree-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -323,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AssignmentThree/AssignmentThree-Prefix.pch";
 				INFOPLIST_FILE = "AssignmentThree/AssignmentThree-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

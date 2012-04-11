@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapViewController.h"
 
 @interface SearchResultsViewController : UITableViewController{
     UINib *cellLoader;
 }
 
 @property (strong, nonatomic) NSArray *searchResults;
+@property (strong, nonatomic) MapViewController *mapController;
 
 @end
