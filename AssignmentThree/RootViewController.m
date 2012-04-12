@@ -67,7 +67,9 @@
     [super dealloc];
 }
 - (IBAction)doSearch:(id)sender {
-    
+    [self.searchText resignFirstResponder];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    [f setAllowsFloats:NO];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"ZipSearch" inManagedObjectContext:self.managedObjectContext];
@@ -79,9 +81,15 @@
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
-    NSPredicate *predicate = [[NSPredicate predicateWithFormat:@"zipCode BEGINSWITH[c] %@",self.searchText.text] autorelease];
+    if ([f numberFromString:self.searchText.text] != nil){
+        NSPredicate *predicate = [[NSPredicate predicateWithFormat:@"zipCode BEGINSWITH[c] %@",self.searchText.text] autorelease];
     
-    [fetchRequest setPredicate:predicate];
+        [fetchRequest setPredicate:predicate];
+    }
+    else {
+        NSPredicate *predicate = [[NSPredicate predicateWithFormat:@"city BEGINSWITH[c] %@",self.searchText.text]autorelease];
+        [fetchRequest setPredicate:predicate];
+    }
     NSError *error = nil;
     NSArray *fetchResults = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     
@@ -99,4 +107,7 @@
     [self.navigationController pushViewController:self.searchController animated:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    self.searchText.text = @"";
+}
 @end
