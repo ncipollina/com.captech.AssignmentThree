@@ -67,8 +67,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated { 
-    if (self.zipData == nil)
-        NSLog(@"OH NO!  The zip code is nil!");
     // 1
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = [self.zipData.latitude doubleValue];
