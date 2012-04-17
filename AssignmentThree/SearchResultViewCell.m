@@ -11,14 +11,14 @@
 
 @implementation SearchResultViewCell
 @synthesize searchData = _searchData;
+@synthesize zipCodeLabel = _zipCodeLabel;
+@synthesize locationLabel = _locationLabel;
 - (void)dealloc {
     [_zipCodeLabel release];
     [_locationLabel release];
     [_searchData release];
     [super dealloc];
 }
-@synthesize zipCodeLabel = _zipCodeLabel;
-@synthesize locationLabel = _locationLabel;
 
 - (void)setSearchData:(ZipSearch *)newSearchData{
         ZipSearch *oldZip = _searchData;

@@ -29,11 +29,6 @@ static NSString *CellClassName = @"SearchResultViewCell";
     [super viewWillDisappear:animated];
 }
 
-- (void)setSearchResults:(NSArray *)newResults{
-    if (_searchResults != newResults)
-        _searchResults = newResults;
-}
-
 - (void)dealloc
 {
     [_searchResults release];

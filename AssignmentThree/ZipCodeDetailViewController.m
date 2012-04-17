@@ -18,17 +18,6 @@
 @synthesize zipData = _zipData;
 @synthesize propertiesToShow = _propertiesToShow;
 
-- (void)setZipData:(ZipSearch *)newZipData{
-    ZipSearch *oldZip = _zipData;
-    _zipData = [newZipData retain];
-    [oldZip release];
-}
-
-- (void)setPropertiesToShow:(NSMutableArray *)newPropertiesToShow{
-    if (_propertiesToShow != newPropertiesToShow)
-        _propertiesToShow = newPropertiesToShow;
-}
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
@@ -38,7 +27,7 @@
 }
 
 - (void)setDisplayData{
-    self.propertiesToShow = [[[NSMutableArray alloc] init]retain];
+    self.propertiesToShow = [[NSMutableArray alloc] init];
     NSString *cityStateString = [[NSString stringWithFormat:@"%@, %@",self.zipData.city, self.zipData.state]retain];
     Detail *cityDetail = [[[Detail alloc] initWithText:cityStateString description:@"City, State"]retain];
     [self.propertiesToShow addObject:cityDetail];

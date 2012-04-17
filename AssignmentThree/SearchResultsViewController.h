@@ -13,7 +13,7 @@
     UINib *cellLoader;
 }
 
-@property (strong, nonatomic) NSArray *searchResults;
-@property (strong, nonatomic) MapViewController *mapController;
+@property (retain, nonatomic) NSArray *searchResults;
+@property (retain, nonatomic) MapViewController *mapController;
 
 @end

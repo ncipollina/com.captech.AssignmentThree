@@ -18,6 +18,6 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (retain, nonatomic) IBOutlet UIButton *searchButton;
 @property (strong, nonatomic) SearchResultsViewController *searchController;
-@property (strong, nonatomic) NSArray *searchResults;
+@property (retain, nonatomic) NSArray *searchResults;
 
 @end
