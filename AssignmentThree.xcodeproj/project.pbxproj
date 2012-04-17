@@ -10,7 +10,6 @@
 		932896F71535AD7A00C00236 /* ZipLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 932896F61535AD7A00C00236 /* ZipLocation.m */; };
 		932897011535C39F00C00236 /* ZipCodeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */; };
 		932897021535C39F00C00236 /* ZipCodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */; };
-		932897051535C4CF00C00236 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = 932897041535C4CF00C00236 /* Detail.m */; };
 		9351A0B71534B42D00AC84E8 /* ZipSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0B61534B42D00AC84E8 /* ZipSearch.m */; };
 		9351A0B91534B72700AC84E8 /* AssignmentThree.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */; };
 		9351A0BD1534B88700AC84E8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351A0BB1534B88700AC84E8 /* RootViewController.m */; };
@@ -38,8 +37,6 @@
 		932896FE1535C39F00C00236 /* ZipCodeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipCodeDetailViewController.h; sourceTree = "<group>"; };
 		932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipCodeDetailViewController.m; sourceTree = "<group>"; };
 		932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZipCodeDetailViewController.xib; sourceTree = "<group>"; };
-		932897031535C4CF00C00236 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
-		932897041535C4CF00C00236 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 		9351A0B51534B42D00AC84E8 /* ZipSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipSearch.h; sourceTree = "<group>"; };
 		9351A0B61534B42D00AC84E8 /* ZipSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipSearch.m; sourceTree = "<group>"; };
 		9351A0B81534B72700AC84E8 /* AssignmentThree.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AssignmentThree.sqlite; sourceTree = "<group>"; };
@@ -150,8 +147,6 @@
 				932896FE1535C39F00C00236 /* ZipCodeDetailViewController.h */,
 				932896FF1535C39F00C00236 /* ZipCodeDetailViewController.m */,
 				932897001535C39F00C00236 /* ZipCodeDetailViewController.xib */,
-				932897031535C4CF00C00236 /* Detail.h */,
-				932897041535C4CF00C00236 /* Detail.m */,
 			);
 			path = AssignmentThree;
 			sourceTree = "<group>";
@@ -245,7 +240,6 @@
 				938B20C615351D3600B2DC96 /* MapViewController.m in Sources */,
 				932896F71535AD7A00C00236 /* ZipLocation.m in Sources */,
 				932897011535C39F00C00236 /* ZipCodeDetailViewController.m in Sources */,
-				932897051535C4CF00C00236 /* Detail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

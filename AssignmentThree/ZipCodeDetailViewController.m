@@ -8,7 +8,6 @@
 
 #import "ZipCodeDetailViewController.h"
 #import "ZipSearch.h"
-#import "Detail.h"
 
 @interface ZipCodeDetailViewController ()
 - (void)setDisplayData;
@@ -28,56 +27,41 @@
 
 - (void)setDisplayData{
     self.propertiesToShow = [[NSMutableArray alloc] init];
-    NSString *cityStateString = [[NSString stringWithFormat:@"%@, %@",self.zipData.city, self.zipData.state]retain];
-    Detail *cityDetail = [[[Detail alloc] initWithText:cityStateString description:@"City, State"]retain];
-    [self.propertiesToShow addObject:cityDetail];
-    Detail *zipDetail = [[[Detail alloc] initWithText:self.zipData.zipCode description:@"Zip Code"]retain];
-    [self.propertiesToShow addObject:zipDetail];
+    NSString *cityStateString = [NSString stringWithFormat:@"%@, %@",[self.zipData.city copy], [self.zipData.state copy]];
     NSNumberFormatter *numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];    
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [numberFormatter setMaximumFractionDigits:4];
     NSNumberFormatter *integerFormatter = [[[NSNumberFormatter alloc] init] autorelease];
     [integerFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [integerFormatter setMaximumFractionDigits:0];
-    NSString *latString = [[numberFormatter stringFromNumber:self.zipData.latitude]retain];
-    NSString *longString = [[numberFormatter stringFromNumber:self.zipData.longitude]retain];
-    NSString *latLongString = [[NSString stringWithFormat:@"%@ %@",latString,longString]retain];
-    Detail *latLongDetail =[[[Detail alloc] initWithText:latLongString description:@"Lattitude Longitude"]retain];
-    [self.propertiesToShow addObject:latLongDetail];
-    Detail *countyDetail = [[[Detail alloc] initWithText:self.zipData.county description:@"County"]retain];
-    [self.propertiesToShow addObject:countyDetail];
+    NSString *latString = [numberFormatter stringFromNumber:[self.zipData.latitude copy]];
+    NSString *longString = [numberFormatter stringFromNumber:[self.zipData.longitude copy]];
+    NSString *latLongString = [NSString stringWithFormat:@"%@ %@",latString,longString];
+    NSString *populationString = [integerFormatter stringFromNumber:[self.zipData.population copy]];
+    NSString *housingUnitsString = [integerFormatter stringFromNumber:[self.zipData.housingUnits copy]];
+    NSString *incomeString = [integerFormatter stringFromNumber:[self.zipData.income copy]];
+    NSString *landAreaString = [numberFormatter stringFromNumber:[self.zipData.landArea copy]];
+    NSString *waterAreaString = [numberFormatter stringFromNumber:[self.zipData.waterArea copy]];
+
     
-    Detail *typeDetail =[[[Detail alloc] initWithText:self.zipData.type description:@"Type"]retain];
-    [self.propertiesToShow addObject:typeDetail];
-    Detail *preferredDetail = [[[Detail alloc] initWithText:self.zipData.preferred description:@"Preferred"]retain];
-    [self.propertiesToShow addObject:preferredDetail];
-    Detail *worldRegionDetail = [[[Detail alloc] initWithText:self.zipData.worldRegion description:@"World Region"]retain];
-    [self.propertiesToShow addObject:worldRegionDetail];
-    Detail *countryDetail =[[[Detail alloc] initWithText:self.zipData.country description:@"Country"]retain];
-    [self.propertiesToShow addObject:countryDetail];
-    Detail *locationTextDetail =[[[Detail alloc] initWithText:self.zipData.locationText description:@"LocationText"]retain];
-    [self.propertiesToShow addObject:locationTextDetail];
-    Detail *locatinDetail = [[[Detail alloc] initWithText:self.zipData.location description:@"Location"]retain];
-    [self.propertiesToShow addObject:locatinDetail];
-    NSString *populationString = [[integerFormatter stringFromNumber:self.zipData.population]retain];
-    Detail *populationDetail = [[[Detail alloc] initWithText:populationString description:@"Population"]retain];
-    NSString *housingUnitsString = [[integerFormatter stringFromNumber:self.zipData.housingUnits]retain];
-    [self.propertiesToShow addObject:populationDetail];
-    Detail *housingUnitsDetail = [[[Detail alloc] initWithText:housingUnitsString description:@"Housing Units"]retain];
-    [self.propertiesToShow addObject:housingUnitsDetail];
-    NSString *incomeString = [[integerFormatter stringFromNumber:self.zipData.income]retain];
-    Detail *incomeDetail =[[[Detail alloc] initWithText:incomeString description:@"Income"]retain];
-    [self.propertiesToShow addObject:incomeDetail];
-    NSString *landAreaString = [[numberFormatter stringFromNumber:self.zipData.landArea]retain];
-    Detail *landAreaDetail = [[[Detail alloc] initWithText:landAreaString description:@"Land Area"]retain];
-    [self.propertiesToShow addObject:landAreaDetail];
-    NSString *waterAreaString = [[numberFormatter stringFromNumber:self.zipData.waterArea]retain];
-    Detail *waterAreaDetail = [[[Detail alloc] initWithText:waterAreaString description:@"Water Area"]retain];
-    [self.propertiesToShow addObject:waterAreaDetail];
-    Detail *decommisionedDetail = [[[Detail alloc] initWithText:self.zipData.decommisioned description:@"Decommisioned"]retain];
-    [self.propertiesToShow addObject:decommisionedDetail];
-    Detail *militaryDetail = [[[Detail alloc] initWithText:self.zipData.militaryRestrictionCodes description:@"Military Restriction Codes"]retain];
-    [self.propertiesToShow addObject:militaryDetail];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:cityStateString,@"City, State", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.zipCode copy],@"Zip Code", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:latLongString,@"Latitude Longitude", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.county copy],@"County", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.type copy],@"Type", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.preferred copy],@"Preferred", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.worldRegion copy],@"World Regin", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.country copy],@"Country", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.locationText copy],@"Location Text", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.location copy],@"Location", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:populationString,@"Population", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:housingUnitsString,@"Housing Units", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:incomeString,@"Income", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:landAreaString,@"Land Area", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:waterAreaString,@"Water Area", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[self.zipData.decommisioned copy],@"Decommisioned", nil]];
+    [self.propertiesToShow addObject:[NSDictionary dictionaryWithObjectsAndKeys:[(self.zipData.militaryRestrictionCodes)?self.zipData.militaryRestrictionCodes : @"" copy],@"Military Restriction Codes", nil]];
+    
 }
 
 - (void)dealloc{
@@ -139,10 +123,15 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] retain];
     }
-    Detail *detail = (Detail *)[self.propertiesToShow objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = detail.description;
-    cell.detailTextLabel.text = detail.textToDisplay;
+    NSDictionary *detail = (NSDictionary *)[self.propertiesToShow objectAtIndex:indexPath.row];
+    
+    //NSLog(@"Detail is %@ for index %d", detail,indexPath.row);
+    
+    NSString *key = [[detail allKeys] objectAtIndex:0];
+    
+    cell.textLabel.text = key;
+    cell.detailTextLabel.text = [detail objectForKey:key];
     
     return cell;
 }
